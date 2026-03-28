@@ -157,15 +157,17 @@ export default function Hero() {
           className="order-1 flex-1"
         >
           <h1
-            className="text-4xl md:text-5xl lg:text-7xl leading-[1.2] mb-6 tracking-tight text-center md:text-left"
+            className="text-3xl md:text-5xl lg:text-7xl leading-tight md:leading-[1.05] mb-6 tracking-tight text-center md:text-left"
             style={{ fontFamily: "var(--font-heading)", fontWeight: 800, color: "#183D32" }}
           >
-            Redefining<br /> Textile Waste<br /> into Circular Value
+            <span className="block whitespace-nowrap">Redefining</span>
+            <span className="block whitespace-nowrap">Textile Waste</span>
+            <span className="block whitespace-nowrap">into Circular Value</span>
           </h1>
           <p className="text-sm md:text-[0.9375rem] lg:text-lg text-[#1a1a1a] mb-6 leading-relaxed font-medium text-center md:text-left max-w-lg">
             Moenviron builds scalable solutions to transform post-consumer
             textiles into reusable, recyclable, and traceable resources bridging
-            global supply chains and Africa's growing circular economy.
+            global supply chains and Africa&#39;s growing circular economy.
           </p>
           <div className="flex flex-col sm:flex-row gap-3 md:gap-4 w-full md:w-auto justify-center md:justify-start">
             <a
