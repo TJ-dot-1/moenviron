@@ -51,10 +51,11 @@ export default function Navbar() {
   const closeMenu = () => setMenuOpen(false);
 
   const links = [
-    { href: "#problem", label: "The Problem" },
-    { href: "#solution", label: "Our Solution" },
-    { href: "#how-it-works", label: "How It Works" },
-    { href: "#impact", label: "Africa's Role" },
+    { href: "/about", label: "About" },
+    { href: "/services", label: "Services" },
+    { href: "/partnership", label: "Partnership" },
+    { href: "/contact", label: "Contact" },
+    { href: "/investor", label: "Investors" },
   ];
 
   return (
@@ -86,13 +87,6 @@ export default function Navbar() {
               {link.label}
             </a>
           ))}
-          <a
-            href="#contact"
-            className="inline-flex items-center justify-center px-6 py-[0.875rem] font-heading font-semibold rounded-full bg-dark-green text-white shadow-[0_4px_14px_rgba(30,58,47,0.3)] hover:bg-forest hover:-translate-y-0.5 hover:shadow-[0_6px_20px_rgba(30,58,47,0.4)] transition-all duration-400"
-            style={{ fontFamily: "var(--font-heading)" }}
-          >
-            Partner With Us
-          </a>
         </div>
 
         {/* Mobile Toggle */}
@@ -139,14 +133,6 @@ export default function Navbar() {
             {link.label}
           </a>
         ))}
-        <a
-          href="#contact"
-          onClick={closeMenu}
-          className="w-full text-center mt-4 px-6 py-3 font-heading font-semibold rounded-full bg-dark-green text-white shadow-[0_4px_14px_rgba(30,58,47,0.3)] hover:bg-forest transition-all"
-          style={{ fontFamily: "var(--font-heading)" }}
-        >
-          Partner With Us
-        </a>
       </div>
     </nav>
   );
